@@ -2,10 +2,9 @@
 const nextConfig = {
   output: 'export',
   images: {
-    unoptimized: true,
+    unoptimized: true, // Required for static hosting
   },
-  basePath: '/todolist',
-  assetPrefix: '/todolist',
+  trailingSlash: true, // Adds a trailing slash to all paths
 };
 
 module.exports = nextConfig;
